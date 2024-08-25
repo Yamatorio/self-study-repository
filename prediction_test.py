@@ -117,9 +117,9 @@ sns.barplot(x="Importance", y="Features",data=df_importance,ci=None)
 plt.title("Permutation Importance")
 plt.show()
 # %%
-import eli5
-from eli5.sklearn import PermutationImportance
+#import eli5
+#from eli5.sklearn import PermutationImportance
 
-perm = PermutationImportance(my_model, random_state=1).fit(val_X, val_y)
-eli5.show_weights(perm, feature_names = val_X.columns.tolist())
+#perm = PermutationImportance(my_model, random_state=1).fit(val_X, val_y)
+#eli5.show_weights(perm, feature_names = val_X.columns.tolist())
 # %%
